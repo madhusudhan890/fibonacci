@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Welcome</h1>
+  <p>Enter Two numbers below to generate Fibonacci series</p>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <form action="/numbers" method="post">
+            <div class="form-group">
+              <label for="number">Enter First Number</label>
+              <input id="num1" type="number" class="form-control" name="number1"  required>
+
+            </div>
+            <div class="form-group">
+              <label for="number">Enter Second Number</label>
+              <input id="num2" type="number" class="form-control" name="number2" required >
+
+            </div>
+
+
+            <button id="button" type="submit" class="btn btn-dark">Submit</button>
+          </form>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<h1 style="text-align:center">Your Fibonacci series is:</h1>
+
+<% for (i=0;i<1;i++){ %>
+ <% var n = num.length %>
+ <% var n1 = num[n-2] %>
+ <% var n2 = num[n-1] %>
+
+
+  <p style="text-align:center"><%= num[n-2] %></p>
+  <p style="text-align:center"><%= num[n-1] %></p>
+  <% var num1= parseInt(n1)  %>
+  <% var num2= parseInt(n2)  %>
+  <% for (i=0;i<8;i++){ %>
+
+
+  <% var result = num1 + num2 %>
+  <% num1 =num2 %>
+  <% num2=result %>
+
+ <p style="text-align:center"><%= result %></p>
+
+ <%   } %>
+<%   } %>
+
+<%- include("partials/header") %>
